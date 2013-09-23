@@ -1,3 +1,4 @@
-name: Your New Jekyll Site
+name: Pint - Process Hitting tools
 markdown: redcarpet
-pygments: true
+baseurl: /pint
+markdown: rdiscount
