@@ -1,4 +1,3 @@
 name: Pint - Process Hitting tools
-markdown: redcarpet
 baseurl: /pint
 markdown: rdiscount
