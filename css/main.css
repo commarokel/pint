@@ -98,6 +98,7 @@ h6 {
 
 p {
   margin: 10px 0 15px 0;
+  text-align: justify;
 }
 
 footer p {
@@ -137,6 +138,7 @@ em {
 
 strong {
   font-weight: bold;
+  text-shadow: #aaa 0px 0px 2px;
 }
 
 img {
@@ -301,6 +303,7 @@ Full-Width Styles
   padding: 50px 10px 30px 10px;
 }
 
+
 #project_title {
   margin: 0;
   color: #fff;
@@ -315,6 +318,16 @@ Full-Width Styles
   font-weight: 300;
   background: none;
   text-shadow: #111 0px 0px 10px;
+}
+
+.simple #header_wrap .inner {
+  padding: 10px 10px 0px 10px;
+}
+.simple #project_title {
+	padding: 0px;
+}
+.simple #project_tagline {
+	padding: 0px;
 }
 
 #downloads {

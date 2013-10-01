@@ -2,7 +2,20 @@
 layout: index
 ---
 
-intro...
+<h3>Introduction</h3>
+<p><strong>The Process Hitting</strong> is recently introduced formalism suited for modelling <strong>qualitative
+dynamics of biological networks</strong>.
+It is a special class of Asynchronous Automata Networks.</p>
+
+<p>The Process Hitting comes with <strong>powerful static analysis for dynamical properties</strong>,
+including fix points, successive reachability properties, and cut sets for reachability.
+Such analysis are tractable for analysing <strong>very large-scale networks</strong>, ranging from
+hundreds to thousands of concurrently interacting components.
+The translation to related formalisms, in particular Boolean and multi-valued networks, is also
+possible.</p>
+
+<p><strong>Pint</strong> implements the language, simulation, formal analysis, and translation of Process Hitting
+models.</p>
 
 
 <h3>Documentation</h3>
@@ -18,16 +31,19 @@ intro...
 <ul>
 {% for post in site.posts %}
 {% if post.category == 'papers' %}
-	<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+	<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> ({{ post.authors }} {{ post.published }})</li>
 {% endif %}
 {% endfor %}
 </ul>
 
 <h3>Model Repository</h3>
+<p>Here are some example Process Hitting models of biological networks.
+Bibliographic references are in the header of the files.</p>
 <ul>
 {% for post in site.posts %}
 {% if post.category == 'models' %}
-	<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+	<li><a href="{{ site.baseurl }}/models/{{ post.name }}.ph">{{ post.name }}.ph</a>
+		- {{ post.description }}.</li>
 {% endif %}
 {% endfor %}
 </ul>
