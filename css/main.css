@@ -212,12 +212,12 @@ ol li {
 }
 
 dl dt {
+  margin-top: 20px;
   font-weight: bold;
 }
 
 dl dd {
   padding-left: 20px;
-  font-style: italic;
 }
 
 dl p {
