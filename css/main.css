@@ -452,3 +452,13 @@ Small Device Styles
   }
 
 }
+
+
+.preview {
+	float: right;
+	width: 250px;
+	margin-left: 20px;
+}
+.clear {
+	clear: both;
+}
