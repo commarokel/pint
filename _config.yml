@@ -1,5 +1,5 @@
 name: Pint - Process Hitting tools
 baseurl: /pint
 markdown: rdiscount
-pint_version: 2014-04-08
+pint_version: 2014-04-28
 exclude: [src]
