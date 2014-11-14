@@ -122,7 +122,6 @@ COOPERATIVITY([mkk4;mkk7] -> jnk 1 0, [[0;0];[1;0];[0;1]])
 COOPERATIVITY([p90rsk;akt] -> gsk3 0 1, [[0;0]])
 COOPERATIVITY([p90rsk;akt] -> gsk3 1 0, [[1;0];[0;1];[1;1]])
 erbb11 1 -> plcg 0 1
-erbb11 0 -> egf 1 0
 COOPERATIVITY([erk12;p90rsk] -> p90rskerk12d 0 1, [[1;1]])
 COOPERATIVITY([erk12;p90rsk] -> p90rskerk12d 1 0, [[0;0];[1;0];[0;1]])
 COOPERATIVITY([p90rsk;mk2] -> creb 0 1, [[1;0];[0;1];[1;1]])
@@ -134,15 +133,10 @@ COOPERATIVITY(
 	erbb34, 1, 0)
 
 plcg 1 -> dag 0 1
-plcg 0 -> egf 1 0
 pak1 1 -> limk1 0 1
-pak1 0 -> egf 1 0
 rac_cdc42 1 -> mekk1 0 1
-rac_cdc42 0 -> egf 1 0
 rac_cdc42 1 -> mekk4 0 1
-rac_cdc42 0 -> egf 1 0
 jnk 1 -> cjun 0 1
-jnk 0 -> egf 1 0
 COOPERATIVITY([jnk;erk12;p90rsk;pp2a] -> cfos 0 1, [[1;0;0;0];[1;1;0;0];[1;0;1;0];[0;1;1;0];[1;1;1;0]])
 COOPERATIVITY([jnk;erk12;p90rsk;pp2a] -> cfos 1 0, [[0;0;0;0];[0;1;0;0];[0;0;1;0];[0;0;0;1];[1;0;0;1];[0;1;0;1];[1;1;0;1];[0;0;1;1];[1;0;1;1];[0;1;1;1];[1;1;1;1]])
 COOPERATIVITY([pak1;akt] -> bad 0 1, [[0;0]])
@@ -152,7 +146,6 @@ COOPERATIVITY([erk12;mkp] -> nucerk12 1 0, [[0;0];[0;1];[1;1]])
 COOPERATIVITY([mekk1;raf1] -> mek12 0 1, [[1;0];[0;1];[1;1]])
 COOPERATIVITY([mekk1;raf1] -> mek12 1 0, [[0;0]])
 bad 1 -> pro_apoptotic 0 1
-bad 0 -> egf 1 0
 
 COOPERATIVITY(
 	    [erbb2;erbb3] in [[1;1]]
@@ -168,7 +161,6 @@ COOPERATIVITY(
 		erbb24, 1, 0)
 
 rac_cdc42 1 -> mlk3 0 1
-rac_cdc42 0 -> egf 1 0
 COOPERATIVITY([shp2;gab1] -> rasgap 0 1, [[0;1]])
 COOPERATIVITY([shp2;gab1] -> rasgap 1 0, [[0;0];[1;0];[1;1]])
 
@@ -236,19 +228,15 @@ COOPERATIVITY([pp2b;nucerk12] -> elk1 1 0, [[0;0];[1;0];[1;1]])
 COOPERATIVITY([nucerk12;gsk3] -> cmyc 0 1, [[1;0]])
 COOPERATIVITY([nucerk12;gsk3] -> cmyc 1 0, [[0;0];[0;1];[1;1]])
 ip3 1 -> ca 0 1
-ip3 0 -> egf 1 0
 COOPERATIVITY([sos1_eps8_e3b1;vav2] -> rac_cdc42 0 1, [[1;0];[0;1];[1;1]])
 COOPERATIVITY([sos1_eps8_e3b1;vav2] -> rac_cdc42 1 0, [[0;0]])
 mtorr 1 -> mtor_ric 0 1
-mtorr 0 -> egf 1 0
 COOPERATIVITY([nck;rac_cdc42;grb2] -> pak1 0 1, [[1;1;0];[0;1;1];[1;1;1]])
 COOPERATIVITY([nck;rac_cdc42;grb2] -> pak1 1 0, [[0;0;0];[1;0;0];[0;1;0];[0;0;1];[1;0;1]])
 COOPERATIVITY([erk12;pdk1] -> p90rsk 0 1, [[1;1]])
 COOPERATIVITY([erk12;pdk1] -> p90rsk 1 0, [[0;0];[1;0];[0;1]])
 mek12 1 -> erk12 0 1
-mek12 0 -> egf 1 0
 tsc1_tsc2 1 -> rheb 1 0
-tsc1_tsc2 0 -> egf 0 1
 COOPERATIVITY([jnk;erk12] -> p70s6_1 0 1, [[1;0];[0;1];[1;1]])
 COOPERATIVITY([jnk;erk12] -> p70s6_1 1 0, [[0;0]])
 COOPERATIVITY([pdk1;mtor_rap;p70s6_1] -> p70s6_2 0 1, [[1;1;1]])
@@ -260,11 +248,9 @@ COOPERATIVITY([sos1r;p90rskerk12d;grb2] -> sos1 1 0, [[0;0;0];[1;0;0];[0;1;0];[1
 COOPERATIVITY([pi34p2;erbb11;pip3] -> vav2 0 1, [[1;1;0];[0;1;1];[1;1;1]])
 COOPERATIVITY([pi34p2;erbb11;pip3] -> vav2 1 0, [[0;0;0];[1;0;0];[0;1;0];[0;0;1];[1;0;1]])
 ras 1 -> rin1 0 1
-ras 0 -> egf 1 0
 COOPERATIVITY([erbb14;erbb44;erbb11] -> nck 0 1, [[1;0;0];[0;1;0];[1;1;0];[0;0;1];[1;0;1];[0;1;1];[1;1;1]])
 COOPERATIVITY([erbb14;erbb44;erbb11] -> nck 1 0, [[0;0;0]])
 ship2 1 -> ship2d 0 1
-ship2 0 -> egf 1 0
 
 COOPERATIVITY(
 	    [pi3kr] in [[1]]
@@ -273,47 +259,33 @@ COOPERATIVITY(
 	pi3k, 1, 0)
 
 akt 1 -> tsc1_tsc2 1 0
-akt 0 -> egf 0 1
 p38 1 -> mk2 0 1
-p38 0 -> egf 1 0
 mlk3 1 -> mkk3 0 1
-mlk3 0 -> egf 1 0
 COOPERATIVITY([csrc;aktd;pak1;ras] -> raf1 0 1, [[1;0;0;1];[0;0;1;1];[1;0;1;1]])
 COOPERATIVITY([csrc;aktd;pak1;ras] -> raf1 1 0, [[0;0;0;0];[1;0;0;0];[0;1;0;0];[1;1;0;0];[0;0;1;0];[1;0;1;0];[0;1;1;0];[1;1;1;0];[0;0;0;1];[0;1;0;1];[1;1;0;1];[0;1;1;1];[1;1;1;1]])
 COOPERATIVITY([mekk1;mlk3;mekk4] -> mkk4 0 1, [[1;0;0];[0;1;0];[1;1;0];[0;0;1];[1;0;1];[0;1;1];[1;1;1]])
 COOPERATIVITY([mekk1;mlk3;mekk4] -> mkk4 1 0, [[0;0;0]])
 mekk1 1 -> mkk7 0 1
-mekk1 0 -> egf 1 0
 mlk3 1 -> mkk6 0 1
-mlk3 0 -> egf 1 0
 COOPERATIVITY([rheb;mtorr] -> mtor_rap 0 1, [[1;1]])
 COOPERATIVITY([rheb;mtorr] -> mtor_rap 1 0, [[0;0];[1;0];[0;1]])
 COOPERATIVITY([rasgap;sos1] -> ras 0 1, [[0;1]])
 COOPERATIVITY([rasgap;sos1] -> ras 1 0, [[0;0];[1;0];[1;1]])
 akt 1 -> aktd 0 1
-akt 0 -> egf 1 0
 COOPERATIVITY([ship2d;ptend;pi3k] -> pip3 0 1, [[0;0;1]])
 COOPERATIVITY([ship2d;ptend;pi3k] -> pip3 1 0, [[0;0;0];[1;0;0];[0;1;0];[1;1;0];[1;0;1];[0;1;1];[1;1;1]])
 erbb11 1 -> ccbl 0 1
-erbb11 0 -> egf 1 0
 COOPERATIVITY([grb2;erbb11] -> gab1 0 1, [[1;0];[0;1];[1;1]])
 COOPERATIVITY([grb2;erbb11] -> gab1 1 0, [[0;0]])
 pten 1 -> ptend 0 1
-pten 0 -> egf 1 0
 COOPERATIVITY([cfos;cjun] -> ap1 0 1, [[1;1]])
 COOPERATIVITY([cfos;cjun] -> ap1 1 0, [[0;0];[1;0];[0;1]])
 limk1 1 -> actin_reorg 0 1
-limk1 0 -> egf 1 0
 erbb11 1 -> shp1 0 1
-erbb11 0 -> egf 1 0
 gab1 1 -> shp2 0 1
-gab1 0 -> egf 1 0
 plcg 1 -> ip3 0 1
-plcg 0 -> egf 1 0
 shp1 1 -> shp1d 0 1
-shp1 0 -> egf 1 0
 mk2 1 -> hsp27 0 1
-mk2 0 -> egf 1 0
 COOPERATIVITY([ship2d;ptend;pi3k] -> pi34p2 0 1, [[1;0;1]])
 COOPERATIVITY([ship2d;ptend;pi3k] -> pi34p2 1 0, [[0;0;0];[1;0;0];[0;1;0];[1;1;0];[0;0;1];[0;1;1];[1;1;1]])
 
