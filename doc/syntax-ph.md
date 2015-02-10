@@ -55,8 +55,7 @@ Example: the following instruction creates a cooperativity between sorts <code>a
 <code>COOPERATIVITY([a;b] -&gt; c 0 1, [[1;0];[0;1]])</code>
 </dd>
 
-<dt><code>COOPERATIVITY(
-<span class="syn_opt">[<a href="#t_name" class="type">Name</a>,]</span>
+<dt><code>COOPERATIVITY(<span class="syn_opt">[<a href="#t_name" class="type">Name</a>,]</span>
 <a href="#t_matching" style="font-style:italic;">state_matching</a>,
 <a href="#t_name" style="font-style:italic;">Name</a>,
 <a href="#t_int" style="font-style:italic;">Int</a>,
