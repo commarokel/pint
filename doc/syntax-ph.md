@@ -56,8 +56,7 @@ Example: the following instruction creates a cooperativity between sorts <code>a
 </dd>
 
 <dt><code>COOPERATIVITY(
-<span class="syn_opt">[
-<a href="#t_name" class="type">Name</a>, ,]</span>
+<span class="syn_opt">[<a href="#t_name" class="type">Name</a>,]</span>
 <a href="#t_matching" style="font-style:italic;">state_matching</a>,
 <a href="#t_name" style="font-style:italic;">Name</a>,
 <a href="#t_int" style="font-style:italic;">Int</a>,
@@ -123,8 +122,7 @@ href="#t_int">Int</a></code></dd>
 	| <code>( <a href="#t_matching">state_matching</a> )</code><br />
 	| <code><a href="#t_matching">state_matching</a> and <a href="#t_matching">state_matching</a></code><br />
 	| <code><a href="#t_matching">state_matching</a> or <a href="#t_matching">state_matching</a></code><br />
-	| <code>[<a href="#t_name">Name</a>;</code>...<code>] in [[<a href="#t_int"
-	style="font-style:italic;">Int</a>;</code>...<code>];</code>...<code>]</code>
+	| <code>[<a href="#t_name">Name</a>;</code>...<code>] in [[<a href="#t_int">Int</a>;</code>...<code>];</code>...<code>]</code>
 </dd>
 </dl>
 
