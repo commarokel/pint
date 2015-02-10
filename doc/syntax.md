@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Development
+title: Syntax of Process Hitting (.ph) files
 category_title: Documentation
 ---
 
-A Pint source file has a filename ending with `.ph` and has the following structure:
+A Process Hitting source file has a filename ending with `.ph` and has the following structure:
 
 <pre><code><a href="#header">[headers]</a><br />
 <a href="#main">&lt;body&gt;</a><br />
@@ -47,13 +47,31 @@ absorption factor <code>sa</code>.
 
 <dt><code>COOPERATIVITY([<a href="#t_name" style="font-style:italic;">Name</a>;</code>...<code>]
 -&gt; <a href="#t_process" style="font-style:italic;">process</a> <a href="#t_int"
-style="font-style:italic;">Int</a>, [[<a href="#t_int"
-style="font-style:italic;">Int</a>;</code>...<code>];</code>...<code>])</code></dt>
+style="font-style:italic;">Int</a>, [[<a href="#t_int" style="font-style:italic;">Int</a>;</code>...<code>];</code>...<code>])</code></dt>
 <dd>Creates cooperitivity between specified sorts and processes for the given hit.
 Example: the following instruction creates a cooperativity between sorts <code>a</code> and
 <code>b</code> to make process <code>c0</code> bounce to <code>c1</code> only if <code>a 1, b
 0</code> or <code>a 0, b 1</code> are present:
 <code>COOPERATIVITY([a;b] -&gt; c 0 1, [[1;0];[0;1]])</code>
+</dd>
+
+<dt><code>COOPERATIVITY(
+<span class="syn_opt">[
+<a href="#t_name" class="type">Name</a>, ,]</span>
+<a href="#t_matching" style="font-style:italic;">state_matching</a>,
+<a href="#t_name" style="font-style:italic;">Name</a>,
+<a href="#t_int" style="font-style:italic;">Int</a>,
+<a href="#t_int" style="font-style:italic;">Int</a>)
+</code></dt>
+<dd>
+Example:<br/>
+<code>COOPERATIVITY([a;b] not in [[0;1]] and [c] in [[0]], d, 1, 0)</code></br/>
+creates nested cooperative sorts that make <code>d</code> bouncing
+from <code>0</code> to <code>1</code> (resp. from <code>1</code> to
+<code>0</code>) when the state matches (resp. does not match) the specified
+condition.
+The optional first argument enforces the name of the cooperative sort that hit
+the sort <code>d</code>.
 </dd>
 
 <dt><code>GRN([<a href="#t_name" style="font-style:italic;">Name</a> <a href="#t_int"
@@ -99,5 +117,14 @@ href="/doc/cli/#opt_initial_state"><code>--initial-state</code> option</a>.</dd>
 <dt><a name="t_action"></a><code>action</code></dt>
 <dd><code><a href="#t_process">process</a> -&gt; <a href="#t_process">process</a> <a
 href="#t_int">Int</a></code></dd>
+<dt><a name="t_matching"></a><code>state_matching</code></dt>
+<dd>
+	<code>not <a href="#t_matching">state_matching</a></code><br />
+	| <code>( <a href="#t_matching">state_matching</a> )</code><br />
+	| <code><a href="#t_matching">state_matching</a> and <a href="#t_matching">state_matching</a></code><br />
+	| <code><a href="#t_matching">state_matching</a> or <a href="#t_matching">state_matching</a></code><br />
+	| <code>[<a href="#t_name">Name</a>;</code>...<code>] in [[<a href="#t_int"
+	style="font-style:italic;">Int</a>;</code>...<code>];</code>...<code>]</code>
+</dd>
 </dl>
 

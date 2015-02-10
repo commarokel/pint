@@ -462,3 +462,11 @@ Small Device Styles
 .clear {
 	clear: both;
 }
+
+span.syn_opt {
+	color: red;
+}
+a.type {
+	font-size: italic;
+}
+
