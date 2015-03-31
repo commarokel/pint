@@ -1,4 +1,4 @@
-name: Pint - Process Hitting tools
+name: Pint - Static analyzer for dynamics of Automata Networks
 baseurl: /pint
 markdown: rdiscount
 pint_version: 2015-02-11
