@@ -30,7 +30,7 @@ An automaton is defined by a name and by a list of local states:
 a [0, 1] (* automaton "a" with two local states *)
 "a" [0, 1] (* equivalent to previous declaration *)
 b [0, 1, "stalled"]
-"Fyn-1" ["inactive", "active"] (* automaton "Fyn-1" with two named local states *)
+"Fyn-1" ["inactive", "active"]
 ```
 
 ### Transition declaration
