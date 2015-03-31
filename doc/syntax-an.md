@@ -48,8 +48,9 @@ any other (previously) declared automata.
 when
 <a href="t_name" class="type">Name</a>=<a href="t_state" class="type">State</a>
 and
-</code>...</code>
+</code>...<code>
 <a href="t_name" class="type">Name</a>=<a href="t_state" class="type">State</a>
+<span class="syn_opt">)</span>
 </code>
 </p>
 
