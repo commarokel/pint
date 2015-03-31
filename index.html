@@ -3,19 +3,26 @@ layout: index
 ---
 
 <h3>Introduction</h3>
-<p><strong>The Process Hitting</strong> is a recently introduced formalism suited for modelling <strong>qualitative
-dynamics of biological networks</strong>.
-It is a special class of Asynchronous Automata Networks.</p>
 
-<p>The Process Hitting comes with <strong>powerful static analysis for dynamical properties</strong>,
-including fixed points, successive reachability properties, and cut sets for reachability.
-Such analyses are tractable for <strong>very large-scale networks</strong>, ranging from
-hundreds to thousands of concurrently interacting components.
+<p><strong>Pint</strong> implements static analyses for computing dynamical properties on
+<strong>very large-scale Automata Networks<strong>, ranging from hundreds to thousands
+of concurrently interacting components.
+Provided analyses include notably the listing of fixed points, successive
+reachability properties, cut sets for reachability, and model reduction
+preserving transient dynamics.
 The translation to related formalisms, in particular Boolean and multi-valued networks, is also
 provided.</p>
 
-<p><strong>Pint</strong> implements the language, simulation, formal analysis, and translation of Process Hitting
-models.</p>
+<p>Automata Networks are defined by a set of finite-state machines whose local
+transitions can be conditionned by the state of other automata in the network.
+Applications are in particlar in <strong>systems biology</strong> with the modelling and
+analysis of signalling pathways and gene regulatory networks, gathering multiple
+interacting components that can be represented with a few local states.</p>
+
+<p>Pint comes with several command line tools to perform formal analyses,
+reductions, simulations, and translation to other formalisms.
+An OCaml library, with possible C bindings, can also be compiled in order to
+embed the static analyses in other frameworks.</p>
 
 <p><a href="gui/">Graphical interfaces</a> for <strong>Pint</strong> are also available.</p>
 
@@ -24,8 +31,8 @@ models.</p>
 <ul>
 	<li><a href="{{ site.baseurl }}/doc/install.html">Installation</a></li>
 	<li><a href="{{ site.baseurl }}/doc/usage.html">Usage</a></li>
-	<li><a href="{{ site.baseurl }}/doc/syntax-ph.html">Syntax for Process Hitting models</a> (.ph)</li>
 	<li><a href="{{ site.baseurl }}/doc/syntax-an.html">Syntax for Automata Network models</a> (.an)</li>
+	<li><a href="{{ site.baseurl }}/doc/syntax-ph.html">Syntax for Process Hitting models</a> (.ph)</li>
 	<li><a href="{{ site.baseurl }}/doc/dev.html">Development</a></li>
 </ul>
 
