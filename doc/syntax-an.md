@@ -92,7 +92,7 @@ Comments are enclosed by `(*` and `*)` and can be nested.
 <dl>
 <dt><code><a name="t_name"></a>Name</code></dt>
 <dd>A name is either a string matching <code>(A..z_)(A..z0..9_')*</code>
-or a any string enclosed with <code>"</code></dd>
+or any string enclosed with <code>"</code></dd>
 <dt><code><a name="t_state"></a>State</code></dt>
 <dd>A state is either an integer or a
 <code><a href="t_name" class="type">Name</a></code>.
