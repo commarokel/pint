@@ -68,6 +68,21 @@ a 1 -> 0  (* no external condition *)
 "Fyn-1" 0 -> 1 when a=0 (* equivalent to previous declaration *)
 ```
 
+### Initial state
+
+By default, each automaton start at the local state <code>0</code>.
+The initial state of the automata network can be override with the following
+directive:
+
+<p>
+<code>initial_state 
+<a href="t_name" class="type">Name</a>=<a href="t_state" class="type">State</a>,
+</code>...<code>
+<a href="t_name" class="type">Name</a>=<a href="t_state" class="type">State</a>
+</code>
+</p>
+
+
 ### Comments
 
 Comments are enclosed by `(*` and `*)` and can be nested.
