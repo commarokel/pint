@@ -64,7 +64,7 @@ states.
 ```
 a 0 -> 1 when "Fyn-1"="active" and b=2 (* b="stalled" *)
 a 1 -> 0  (* no external condition *)
-"Fyn-1" "passive" -> "active" when a=0
+"Fyn-1" "inactive" -> "active" when a=0
 "Fyn-1" 0 -> 1 when a=0 (* equivalent to previous declaration *)
 ```
 
