@@ -1,3 +1,19 @@
+(**
+
+Metazoan segmentation.
+
+Bibliography:
+* Francois, P.; Hakim, V. & Siggia, E. D. Deriving structure from evolution: metazoan segmentation.
+  Mol Syst Biol, EMBO and Nature Publishing Group, 2007, 3.
+* Loïc Paulevé, Morgan Magnin, and Olivier Roux. Refining dynamics of gene regulatory networks in a
+  stochastic π-calculus framework. In Transactions on Computational Systems Biology XIII, volume 6575
+  of Lecture Notes in Comp Sci, pages 171-191. Springer, 2011
+  http://dx.doi.org/10.1007/978-3-642-19748-2_8
+
+**)
+
+
+
 directive sample 40.
 
 process a 1 process c 1 process f 1
